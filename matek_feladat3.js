@@ -3,13 +3,15 @@
 //Ezeket az értékeket pedig egy objectbe adja vissza! A property-k neve legyen: binary, octal, hexa.
 
 function konvert (decnum) {
-  console.log( {
+  console.log(`A ${decnum} 10-es számrendszerbeli szám átváltása:`);
+    console.log(  
+    {
      binary:
-     binarynum = '0b'+ Number(decnum).toString(2),
+     binarynum = `0b${Number(decnum).toString(2)}`,
      octal: 
-     octalnum= '0o' + Number(decnum).toString(8),
+     octalnum= `0o${Number(decnum).toString(8)}`,
      hexa: 
-     hexnum = '0x'+ Number(decnum).toString(16)
+     hexnum = `0x${Number(decnum).toString(16)}`
         });
 }
 konvert (100);
